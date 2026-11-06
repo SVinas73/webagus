@@ -194,7 +194,6 @@
 .gift-img { justify-self: center; width: min(60vw, 250px); aspect-ratio: 2 / 3; border-radius: 14px; transform: rotate(-3deg); box-shadow: 0 26px 54px rgba(62, 70, 48, .18); }
 .gift-tx { text-align: center; }
 .gift-tx h2 { font-family: var(--serif); font-weight: var(--w-display); font-size: clamp(2.2rem, 7vw, 3.3rem); line-height: 1.08; }
-.gift-tx h2 em { color: var(--oliva); }
 .gift-tx > p { margin-top: .6rem; color: var(--texto-2); }
 .gift-opts { margin-top: 1.7rem; display: grid; gap: .8rem; }
 .gopt {
