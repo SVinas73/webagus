@@ -16,9 +16,10 @@ h1, h2, h3, h4,
   letter-spacing: -0.005em;
   line-height: 1.04;
 }
-/* La palabra destacada (_texto_) va en itálica fina, como en una revista */
-h1 em, h2 em, h3 em, h4 em, .book-h em {
-  font-family: var(--serif); font-style: italic; font-weight: 300; color: inherit;
+/* Las palabras marcadas (_texto_) llevan exactamente el mismo formato que el resto
+   de la frase: nada de itálica, otro peso ni otro color. */
+em, h1 em, h2 em, h3 em, h4 em, .book-h em, .serif em {
+  font: inherit; font-style: normal; color: inherit; letter-spacing: inherit;
 }
 
 /* Tamaños: la serif tiene ojo medio chico, por eso va más grande que una sans */
