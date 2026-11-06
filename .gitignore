@@ -1,0 +1,10 @@
+node_modules/
+.env
+data/*.db
+data/*.db-*
+data/.session-secret
+# Capturas de la referencia (contienen fotos de terceros)
+docs/audit/reference/
+# Archivos multimedia propios: se suben al servidor, no al repo (quitá esta línea si preferís versionarlos)
+public/media/*
+!public/media/README.md

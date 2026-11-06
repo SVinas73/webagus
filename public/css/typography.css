@@ -1,0 +1,67 @@
+/* ==========================================================
+   TIPOGRAFÍA — un solo lugar para toda la página.
+   Titulares: Cormorant Garamond (serif fina, alto contraste).
+   Textos, botones, etiquetas y formularios: Jost (sans geométrica).
+   Se carga al final para que sus reglas manden sobre el resto.
+   ========================================================== */
+
+body { font-family: var(--sans); font-weight: 400; letter-spacing: .005em; }
+
+/* Todo lo que usa la serif: titulares livianos, sin negrita */
+h1, h2, h3, h4,
+.book-h, .head h2, .gift-tx h2, .close h2, .intro-card h1,
+.scr-head h2, .sh-name, .pp-cap h3, .fl-info h1, .done h1 {
+  font-family: var(--serif);
+  font-weight: 300;
+  letter-spacing: -0.005em;
+  line-height: 1.04;
+}
+/* La palabra destacada (_texto_) va en itálica fina, como en una revista */
+h1 em, h2 em, h3 em, h4 em, .book-h em {
+  font-family: var(--serif); font-style: italic; font-weight: 300; color: inherit;
+}
+
+/* Tamaños: la serif tiene ojo medio chico, por eso va más grande que una sans */
+.book-h { font-size: clamp(2.45rem, 10vw, 3.8rem); }
+.intro-card h1 { font-size: clamp(1.8rem, 6.6vw, 2.35rem); line-height: 1.1; }
+.head h2, .gift-tx h2 { font-size: clamp(2.6rem, 9vw, 4rem); }
+.close h2 { font-size: clamp(2.7rem, 10vw, 4.3rem); }
+.scr-head h2 { font-size: clamp(3rem, 12vw, 4.6rem); }
+@media (min-width: 820px) { .book-h { font-size: 3.6rem; } }
+@media (min-width: 960px) { .scr-head h2 { font-size: 3.8rem; } }
+@media (max-width: 819px) and (max-height: 700px) { .book-h { font-size: 2.1rem; } }
+
+/* Títulos chicos en serif: un poco más de peso para que se lean bien */
+.person h3 { font-family: var(--serif); font-weight: 400; font-size: 2.1rem; }
+.mrow .nm { font-family: var(--serif); font-weight: 400; font-size: 1.65rem; line-height: 1.05; }
+@media (min-width: 960px) { .mrow .nm { font-size: 1.95rem; } }
+@media (max-width: 380px) { .mrow .nm { font-size: 1.42rem; } }
+.mrow .pr { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; }
+.sh-name { font-size: 2.5rem; font-style: normal; }
+.pp-cap h3 { font-size: 2.15rem; font-weight: 400; }
+.stat b { font-family: var(--serif); font-weight: 500; font-size: 1.65rem; }
+.inc { font-family: var(--serif); font-weight: 500; font-size: 1.5rem; }
+.gopt .g-t { font-family: var(--serif); font-weight: 400; font-size: 1.75rem; }
+.fl-info h1 { font-size: 2.3rem; }
+.step-h h2 { font-family: var(--serif); font-weight: 400; font-size: 1.75rem; }
+.cal-top h3 { font-family: var(--serif); font-weight: 500; font-size: 1.55rem; }
+.slots-h .date { font-family: var(--serif); font-weight: 500; font-size: 1.55rem; }
+.picked b { font-family: var(--serif); font-weight: 500; font-size: 1.35rem; }
+.done h1 { font-size: 2.6rem; }
+.rc .cap b { font-family: var(--serif); font-weight: 400; font-size: 1.35rem; }
+
+/* Marca en versalitas espaciadas (como un logotipo) */
+.foot, .scr-foot { font-family: var(--serif); font-weight: 400; letter-spacing: .32em; }
+.foot { font-size: 1.2rem; }
+
+/* Etiquetas, botones y textos de apoyo: sans en mayúsculas espaciadas */
+.btn, .eyebrow, .tagline, .scr-brand, .scr-count, .ct-l, .stat span, .slot-go, .rc .cap, .mrow .ar, .ph-k {
+  font-family: var(--sans);
+}
+.btn { font-weight: 500; letter-spacing: .18em; }
+.tagline, .scr-brand { font-weight: 500; letter-spacing: .32em; }
+.opt { font-family: var(--sans); font-weight: 400; font-size: 1.08rem; letter-spacing: .01em; }
+.desc, .intro-card p, .head p, .person .bio, .gift-tx > p, .close > .wrap > p { font-weight: 400; }
+.input, .select, .slot { font-family: var(--sans); }
+.slot { font-weight: 500; }
+.code { font-family: var(--sans); font-weight: 500; }

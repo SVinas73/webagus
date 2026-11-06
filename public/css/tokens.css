@@ -1,0 +1,48 @@
+/* ==========================================================
+   IDENTIDAD VISUAL — paleta obligatoria del proyecto.
+   Toda la interfaz usa estas variables: cambiar un color acá
+   lo cambia en todas las pantallas.
+   ========================================================== */
+:root {
+  /* Paleta */
+  --verde: #C8D890;        /* Verde principal: superficies protagonistas */
+  --verde-suave: #EAF0D8;  /* Verde suave: fondos de apoyo, hover */
+  --blanco: #FCFCF9;       /* Blanco cálido: fondo base */
+  --beige: #F3EFE5;        /* Beige claro: fondos secundarios */
+  --oliva: #68764B;        /* Verde oliva: acciones y detalles de contraste */
+  --texto: #2C3027;        /* Texto principal */
+  --texto-2: #77786D;      /* Texto secundario */
+  --borde: #E5E2D8;        /* Bordes */
+
+  /* Derivados de la misma paleta (no agregan tonos nuevos) */
+  --oliva-osc: #545F3C;                 /* hover del botón oliva */
+  --texto-sobre-verde: #3E4630;         /* texto secundario legible sobre el verde principal */
+  --velo: rgba(44, 48, 39, 0.46);       /* fondo de modales (texto principal con transparencia) */
+  --linea: rgba(44, 48, 39, 0.14);
+
+  /* Tipografía */
+  /* Combinación editorial: serif fina de alto contraste para titulares
+     (Cormorant Garamond) + sans geométrica limpia para textos, botones y formularios (Jost). */
+  --serif: 'Cormorant Garamond', 'Cormorant', Garamond, 'Times New Roman', serif;
+  --sans: 'Jost', 'Futura', 'Century Gothic', system-ui, sans-serif;
+  --font: var(--sans);
+  --w-display: 300;  /* titulares livianos, como la referencia visual */
+  --w-title: 400;
+
+  /* Escala */
+  --r-xs: 8px;
+  --r-sm: 12px;
+  --r-md: 18px;
+  --r-lg: 26px;
+  --r-pill: 999px;
+
+  --sh-1: 0 1px 2px rgba(44, 48, 39, .05), 0 6px 18px rgba(44, 48, 39, .06);
+  --sh-2: 0 14px 40px rgba(44, 48, 39, .12);
+
+  --ease: cubic-bezier(.2, .7, .2, 1);
+  --ease-sheet: cubic-bezier(.32, .72, 0, 1);
+
+  --tap: 48px;             /* alto mínimo de controles táctiles */
+  --safe-b: env(safe-area-inset-bottom, 0px);
+  --safe-t: env(safe-area-inset-top, 0px);
+}

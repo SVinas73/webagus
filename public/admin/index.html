@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es-UY">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Panel · Reservas</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Jost:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="/css/tokens.css">
+  <link rel="stylesheet" href="/admin/admin.css">
+  <script type="module" src="/admin/admin.js"></script>
+</head>
+<body>
+  <div id="login" class="login" hidden>
+    <form class="login-card" id="loginForm">
+      <h1>Panel de administración</h1>
+      <p class="muted" id="loginMsg">Ingresá la contraseña del centro.</p>
+      <label class="fld"><span>Contraseña</span><input type="password" id="pw" autocomplete="current-password" required></label>
+      <button class="b b-primary" type="submit">Entrar</button>
+      <p class="err" id="loginErr" role="alert"></p>
+    </form>
+  </div>
+
+  <div id="panel" class="panel" hidden>
+    <aside class="side">
+      <div class="side-h">Panel</div>
+      <nav id="tabs">
+        <button data-tab="bookings" class="on">Reservas</button>
+        <button data-tab="services">Tratamientos</button>
+        <button data-tab="categories">Categorías</button>
+        <button data-tab="staff">Equipo</button>
+        <button data-tab="hours">Horarios</button>
+        <button data-tab="blocks">Días bloqueados</button>
+        <button data-tab="site">Textos del sitio</button>
+        <button data-tab="rules">Reglas de reserva</button>
+        <button data-tab="media">Multimedia</button>
+      </nav>
+      <div class="side-f">
+        <a href="/" target="_blank" rel="noopener">Ver sitio ↗</a>
+        <button id="logout" type="button">Salir</button>
+      </div>
+    </aside>
+    <main class="main" id="main" tabindex="-1"></main>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="dlg"></dialog>
+</body>
+</html>

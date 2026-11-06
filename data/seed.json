@@ -1,0 +1,363 @@
+{
+  "_comment": "CONTENIDO DE DEMOSTRACIÓN. Nombres, precios, textos y contactos son de ejemplo y se editan desde /admin. Para recargar este archivo: npm run seed -- --reset (no borra reservas).",
+  "settings": {
+    "site": {
+      "centerName": "Nombre del Centro",
+      "logoAlt": "Logo del centro",
+      "tagline": "Cosmetología · Estudio de piel",
+      "heroQuestion": "¿Qué estás buscando hoy?",
+      "introTitle": "Tu piel, _tu tiempo._",
+      "introText": "Sesiones de cosmetología pensadas para cada tipo de piel. Elegí tu tratamiento y reservá el horario que mejor te quede.",
+      "team": {
+        "title": "Tu _cosmetóloga_",
+        "subtitle": "Atención personalizada, de principio a fin."
+      },
+      "space": {
+        "title": "El _espacio_",
+        "subtitle": "Un lugar sereno, pensado para que te desconectes.",
+        "items": [
+          {
+            "type": "video",
+            "file": "video-espacio-01.mp4",
+            "poster": "video-espacio-01-portada.webp",
+            "label": "Recorrido por la sala de tratamientos"
+          },
+          {
+            "type": "video",
+            "file": "video-espacio-02.mp4",
+            "poster": "video-espacio-02-portada.webp",
+            "label": "Detalle de la camilla y aparatología"
+          },
+          {
+            "type": "photo",
+            "file": "foto-espacio-01.webp",
+            "label": "Sala de tratamientos con luz natural"
+          },
+          {
+            "type": "photo",
+            "file": "foto-espacio-02.webp",
+            "label": "Recepción y zona de espera"
+          },
+          {
+            "type": "photo",
+            "file": "foto-espacio-03.webp",
+            "label": "Productos y activos en estantería"
+          },
+          {
+            "type": "photo",
+            "file": "foto-espacio-04.webp",
+            "label": "Detalle de texturas: cremas y sérums"
+          },
+          {
+            "type": "photo",
+            "file": "foto-espacio-05.webp",
+            "label": "Profesional preparando la sesión"
+          }
+        ]
+      },
+      "instagram": {
+        "title": "En _Instagram_",
+        "handle": "@tu.centro",
+        "profileUrl": "https://www.instagram.com/",
+        "items": [
+          {
+            "url": "https://www.instagram.com/",
+            "cover": "foto-instagram-01.webp",
+            "caption": "Así es una limpieza profunda"
+          },
+          {
+            "url": "https://www.instagram.com/",
+            "cover": "foto-instagram-02.webp",
+            "caption": "Rutina de noche en 3 pasos"
+          },
+          {
+            "url": "https://www.instagram.com/",
+            "cover": "foto-instagram-03.webp",
+            "caption": "Antes de tu primera sesión"
+          },
+          {
+            "url": "https://www.instagram.com/",
+            "cover": "foto-instagram-04.webp",
+            "caption": "Protector solar todo el año"
+          }
+        ]
+      },
+      "gift": {
+        "enabled": true,
+        "title": "Regalá _una sesión_",
+        "text": "Elegí el formato de la gift card y pedila por WhatsApp.",
+        "image": "foto-gift-card.webp",
+        "options": [
+          {
+            "title": "Gift card digital",
+            "message": "Hola, quiero una gift card digital"
+          },
+          {
+            "title": "Gift card impresa",
+            "message": "Hola, quiero una gift card impresa"
+          }
+        ],
+        "note": "Al tocar, se abre WhatsApp con tu pedido escrito para que solo tengas que enviarlo."
+      },
+      "closing": {
+        "title": "Tu momento _te espera_",
+        "text": "Elegí tu tratamiento y encontrá el horario que mejor te quede.",
+        "cta": "Reservar mi sesión",
+        "videos": [
+          {
+            "file": "video-sesion-01.mp4",
+            "poster": "video-sesion-01-portada.webp",
+            "label": "Aplicación de máscara facial"
+          },
+          {
+            "file": "video-sesion-02.mp4",
+            "poster": "video-sesion-02-portada.webp",
+            "label": "Masaje facial en cámara lenta"
+          },
+          {
+            "file": "video-sesion-03.mp4",
+            "poster": "video-sesion-03-portada.webp",
+            "label": "Textura de sérum sobre la piel"
+          }
+        ]
+      },
+      "contact": {
+        "whatsapp": "59800000000",
+        "whatsappDisplay": "000 000 000",
+        "whatsappCaption": "Si tenés alguna duda, escribinos por acá",
+        "instagramUser": "tu.centro",
+        "addressTitle": "Barrio, Montevideo",
+        "addressDetail": "Calle 0000 esquina Calle",
+        "mapsQuery": "Montevideo, Uruguay"
+      },
+      "seo": {
+        "title": "Nombre del Centro · Cosmetología",
+        "description": "Sesiones de cosmetología facial, higiene de espalda y masaje facial. Reservá tu turno online."
+      }
+    },
+    "booking": {
+      "minNoticeHours": 12,
+      "maxAdvanceDays": 60,
+      "defaultStatus": "confirmed",
+      "depositText": "Seña de reserva: $ 000 (DEMO)",
+      "anyStaffLabel": "Cualquier profesional disponible",
+      "successNote": "Si necesitás cambiar o cancelar tu turno, escribinos por WhatsApp con tu código de reserva."
+    }
+  },
+  "categories": [
+    {
+      "id": "facial",
+      "title": "Sesiones _faciales_",
+      "label": "Reservar mi sesión facial",
+      "photo": "foto-categoria-facial.webp"
+    },
+    {
+      "id": "masaje",
+      "title": "Masaje _facial_",
+      "label": "Reservar mi masaje facial",
+      "photo": "foto-categoria-masaje.webp"
+    }
+  ],
+  "services": [
+    {
+      "id": "evaluacion-personalizada",
+      "category": "facial",
+      "name": "Evaluación y facial a medida",
+      "subtitle": "Diagnóstico en consultorio",
+      "duration": 75,
+      "price": null,
+      "description": "Para cuando no sabés qué sesión elegir. Analizamos tu piel en consultorio y definimos juntas el tratamiento del día, con una rutina domiciliaria pensada para vos.",
+      "ideal": "Ideal para tu primera visita o si querés una opinión profesional antes de decidir.",
+      "steps": [],
+      "note": "El valor se confirma en consultorio según el tratamiento elegido.",
+      "photo": "foto-tratamiento-evaluacion.webp"
+    },
+    {
+      "id": "limpieza-profunda",
+      "category": "facial",
+      "name": "Limpieza facial profunda",
+      "subtitle": "",
+      "duration": 75,
+      "price": 1900,
+      "description": "Limpieza completa con extracciones para despejar los poros, retirar impurezas y devolverle a la piel su respiración natural. Deja la piel preparada para recibir activos.",
+      "ideal": "Ideal para pieles con impurezas, poros dilatados o textura irregular.",
+      "steps": [
+        "Doble limpieza",
+        "Exfoliación suave",
+        "Vapor ozono",
+        "Extracciones",
+        "Alta frecuencia",
+        "Máscara calmante",
+        "Hidratación y protección solar"
+      ],
+      "note": "Todas las sesiones incluyen recomendación de rutina domiciliaria.",
+      "photo": "foto-tratamiento-limpieza.webp"
+    },
+    {
+      "id": "peeling-hidratacion",
+      "category": "facial",
+      "name": "Peeling + hidratación",
+      "subtitle": "Limpieza y peeling químico suave",
+      "duration": 75,
+      "price": 2150,
+      "description": "Combina una limpieza con extracciones y un peeling químico de baja concentración que renueva la superficie de la piel y unifica el tono.\n\nExiste una versión adaptada para pieles sensibles o reactivas.",
+      "ideal": "",
+      "steps": [
+        "Limpieza",
+        "Peeling químico suave",
+        "Extracciones",
+        "Máscara descongestiva",
+        "Sérum hidratante",
+        "Protección solar"
+      ],
+      "note": "Todas las sesiones incluyen recomendación de rutina domiciliaria.",
+      "photo": "foto-tratamiento-peeling.webp"
+    },
+    {
+      "id": "dermaplaning-renovacion",
+      "category": "facial",
+      "name": "Dermaplaning y renovación",
+      "subtitle": "Limpieza, dermaplaning y peeling",
+      "duration": 75,
+      "price": 2400,
+      "description": "Retira células muertas y vello fino para una piel más lisa y luminosa. Mejora la absorción de los productos y el acabado del maquillaje.",
+      "ideal": "Para pieles opacas que buscan suavidad y luminosidad.",
+      "steps": [
+        "Limpieza",
+        "Dermaplaning",
+        "Peeling enzimático",
+        "Extracciones",
+        "Máscara hidratante",
+        "Protección solar"
+      ],
+      "note": "Todas las sesiones incluyen recomendación de rutina domiciliaria.",
+      "photo": "foto-tratamiento-dermaplaning.webp"
+    },
+    {
+      "id": "microneedling-activos",
+      "category": "facial",
+      "name": "Microneedling con activos",
+      "subtitle": "Limpieza + dermapen o mesoterapia",
+      "duration": 75,
+      "price": 2600,
+      "description": "Estimula la producción de colágeno y potencia la penetración de activos elegidos según tu piel. Trabaja textura, marcas y luminosidad.",
+      "ideal": "Para pieles sin vitalidad, con marcas o textura irregular.",
+      "steps": [
+        "Limpieza",
+        "Exfoliación",
+        "Extracciones",
+        "Microneedling con activos",
+        "Máscara calmante",
+        "Protección solar"
+      ],
+      "note": "Requiere evaluación previa si es tu primera vez.",
+      "photo": "foto-tratamiento-microneedling.webp"
+    },
+    {
+      "id": "facial-antioxidante",
+      "category": "facial",
+      "name": "Facial antioxidante",
+      "subtitle": "Vitamina C y niacinamida",
+      "duration": 60,
+      "price": 2050,
+      "description": "Sesión enfocada en devolver luminosidad y proteger la piel del estrés ambiental, con activos antioxidantes en alta concentración.",
+      "ideal": "Para pieles apagadas o después del verano.",
+      "steps": [
+        "Limpieza",
+        "Exfoliación enzimática",
+        "Sérum antioxidante",
+        "Masaje facial",
+        "Máscara de hidrogel",
+        "Protección solar"
+      ],
+      "note": "",
+      "photo": "foto-tratamiento-antioxidante.webp"
+    },
+    {
+      "id": "gift-card-cuponera",
+      "category": "facial",
+      "name": "Tengo una gift card o cuponera",
+      "subtitle": "",
+      "duration": 75,
+      "price": null,
+      "description": "Reservá tu turno acá y después coordinamos los detalles de tu gift card o cuponera.",
+      "ideal": "",
+      "steps": [
+        "Gift card → envianos una foto por WhatsApp para registrarla",
+        "Cuponera → contanos por WhatsApp qué número de sesión es"
+      ],
+      "note": "",
+      "photo": "foto-tratamiento-gift-card.webp"
+    },
+    {
+      "id": "masaje-facial",
+      "category": "masaje",
+      "name": "Masaje facial",
+      "subtitle": "Relajante y reafirmante",
+      "duration": 60,
+      "price": 1750,
+      "description": "Masaje manual que alivia tensiones, oxigena y mejora la elasticidad de la piel.",
+      "ideal": "",
+      "steps": [],
+      "note": "",
+      "photo": "foto-tratamiento-masaje-facial.webp"
+    }
+  ],
+  "staff": [
+    {
+      "id": "cosmetologa",
+      "name": "Nombre",
+      "role": "Cosmetóloga",
+      "bio": "Descripción",
+      "photo": "foto-cosmetologa.webp",
+      "featured": true,
+      "services": "*"
+    }
+  ],
+  "hours": [
+    {
+      "weekday": 1,
+      "start": "09:00",
+      "end": "19:00"
+    },
+    {
+      "weekday": 2,
+      "start": "09:00",
+      "end": "19:00"
+    },
+    {
+      "weekday": 3,
+      "start": "09:00",
+      "end": "19:00"
+    },
+    {
+      "weekday": 4,
+      "start": "09:00",
+      "end": "19:00"
+    },
+    {
+      "weekday": 5,
+      "start": "09:00",
+      "end": "19:00"
+    },
+    {
+      "weekday": 6,
+      "start": "09:00",
+      "end": "13:00"
+    }
+  ],
+  "blocks": [
+    {
+      "from": "2026-12-25",
+      "reason": "Navidad"
+    },
+    {
+      "from": "2027-01-01",
+      "reason": "Año nuevo"
+    },
+    {
+      "from": "2027-01-06",
+      "reason": "Día de Reyes"
+    }
+  ]
+}
